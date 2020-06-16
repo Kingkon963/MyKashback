@@ -1,0 +1,132 @@
+.navbar-dark {
+  background-color: #a65b5b;
+}
+
+header {
+  margin-top: 50px;
+  height: 60vh;
+  background-image: url("http://via.placeholder.com/1500x500");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.row-content {
+  min-height: 60vh;
+}
+
+.guide {
+  background: #020024;
+  background: linear-gradient(156deg, #020024 0%, #0d192a 9%, #626061 100%);
+  color: floralwhite;
+}
+
+.guide h1 {
+  font-size: 1.6em;
+  border: 2px solid floralwhite;
+  padding: 3px 20px 3px 20px;
+}
+
+@media only screen and (max-width: 320px) {
+  .guide h1 {
+    font-size: 1.3em;
+  }
+}
+
+.benefits {
+  background-image: url("http://via.placeholder.com/1500x500");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.benefits .benefit-box {
+  border: 3px solid floralwhite;
+  padding: 0px 20px 0px 20px;
+  min-width: 60%;
+  margin-bottom: 30px;
+  text-align: right;
+  color: floralwhite;
+}
+
+.partners {
+  background: #0c1829;
+  background: linear-gradient(156deg, #0c1829 0%, #0d192a 9%, #3f6066 100%);
+}
+
+.partners .partners-heading {
+  color: floralwhite;
+}
+
+#carouselPartners {
+  overflow-x: hidden;
+}
+
+.subscribtion-row {
+  background: #fcfafa;
+  background: linear-gradient(156deg, #fcfafa 0%, #ebdbdb 8%, #bc8484 100%);
+}
+
+.sub-form-div #sub-form-heading {
+  color: #4a6f73;
+}
+
+.sub-form-div .sub-form-input {
+  background: transparent;
+  text-align: center;
+  border: 2px solid #636162;
+}
+
+.sub-form-div .sub-btn {
+  background-color: #a65b5b;
+  color: floralwhite;
+  padding: 5px 40px 5px 40px;
+  border: none;
+}
+
+footer {
+  background: #a55a5a;
+  background: linear-gradient(156deg, #a55a5a 0%, #281616 100%);
+}
+
+footer .row-content {
+  min-height: 30vh;
+}
+
+footer li {
+  list-style: none;
+}
+
+footer a {
+  color: floralwhite;
+  text-decoration: none;
+  font-weight: lighter;
+}
+
+foot-list-support {
+  display: inline;
+}
+
+foot-list-support li {
+  display: inline;
+  color: red;
+}
+
+.btn-social-icon {
+  background-color: floralwhite;
+  border-radius: 50%;
+  color: #636162;
+}
+
+#insta-btn {
+  background: transparent;
+  color: floralwhite;
+  font-size: 20px;
+}
+
+#copyright {
+  text-align: center;
+  color: #a1a1a1;
+  font-weight: lighter;
+}
+/*# sourceMappingURL=style.css.map */
