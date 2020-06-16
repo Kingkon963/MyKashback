@@ -2,6 +2,15 @@ $colors: (
 	"primary": #a65b5b
 );
 
+/*
+font-family: 'Andada', serif;
+font-family: 'Belleza', sans-serif;
+font-family: 'Corben', cursive;
+font-family: 'Lalezar', cursive;
+font-family: 'Muli', sans-serif;
+font-family: 'Open Sans', sans-serif;
+*/
+
 $desktop: 840px;
 $iphone-5: 320px;
 
@@ -23,11 +32,20 @@ $iphone-5: 320px;
 }
 header{
 	margin-top: 50px;
-	height: 60vh;
-	background-image: url('http://via.placeholder.com/1500x500');
+	height: 80vh;
+	background-image: url('Pic_Collate.png');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+	color: floralwhite;
+
+	.header-card{
+		
+
+		button{
+			font-size: 1em !important;
+		}
+	}
 }
 .intro-div{
 
@@ -43,20 +61,55 @@ header{
 	color: floralwhite;
 
 	h1{
+		color: floralwhite;
 		font-size: 1.6em;
 		border:2px solid floralwhite;
-		padding: 3px 20px 3px 20px;
+		text-align: center;
+		padding: 5px 0px 10px 0px;
+		margin: 0px;
+		min-width: 100%;
 
 		@media only screen and(max-width: $iphone-5){
 			font-size: 1.3em;
 		}
 	}
+	#guide-heading-sub {
+		color: #bff8ee;
+	}
+	
+
+	.step-div{
+
+		.step-heading{
+		border: 2px solid floralwhite;
+		text-align: center;
+		min-width: 60%;
+		margin: 10px auto;
+		padding: 5px 0 7px 0;
+		font-size: 1.3em;
+		}
+
+		img{
+			
+		}
+
+		p{
+			text-align: center;
+		}
+
+		span{
+			width: 30%;
+			height: 15px;
+			border-radius: 20px 20px;
+			background-color: color(primary);
+		}
+	}
 }
 .benefits{
-	background-image: url("http://via.placeholder.com/1500x500");
+	background-image: url("./3rd_portion.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: center;
+	
 
 	.benefit-box{
 		border: 3px solid floralwhite;

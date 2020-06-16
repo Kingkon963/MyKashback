@@ -1,14 +1,27 @@
+/*
+font-family: 'Andada', serif;
+font-family: 'Belleza', sans-serif;
+font-family: 'Corben', cursive;
+font-family: 'Lalezar', cursive;
+font-family: 'Muli', sans-serif;
+font-family: 'Open Sans', sans-serif;
+*/
 .navbar-dark {
   background-color: #a65b5b;
 }
 
 header {
   margin-top: 50px;
-  height: 60vh;
-  background-image: url("http://via.placeholder.com/1500x500");
+  height: 80vh;
+  background-image: url("Pic_Collate.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  color: floralwhite;
+}
+
+header .header-card button {
+  font-size: 1em !important;
 }
 
 .row-content {
@@ -22,9 +35,13 @@ header {
 }
 
 .guide h1 {
+  color: floralwhite;
   font-size: 1.6em;
   border: 2px solid floralwhite;
-  padding: 3px 20px 3px 20px;
+  text-align: center;
+  padding: 5px 0px 10px 0px;
+  margin: 0px;
+  min-width: 100%;
 }
 
 @media only screen and (max-width: 320px) {
@@ -33,11 +50,34 @@ header {
   }
 }
 
+.guide #guide-heading-sub {
+  color: #bff8ee;
+}
+
+.guide .step-div .step-heading {
+  border: 2px solid floralwhite;
+  text-align: center;
+  min-width: 60%;
+  margin: 10px auto;
+  padding: 5px 0 7px 0;
+  font-size: 1.3em;
+}
+
+.guide .step-div p {
+  text-align: center;
+}
+
+.guide .step-div span {
+  width: 30%;
+  height: 15px;
+  border-radius: 20px 20px;
+  background-color: #a65b5b;
+}
+
 .benefits {
-  background-image: url("http://via.placeholder.com/1500x500");
+  background-image: url("./3rd_portion.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
 }
 
 .benefits .benefit-box {
