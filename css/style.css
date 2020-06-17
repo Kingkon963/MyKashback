@@ -1,23 +1,29 @@
-/*
-font-family: 'Andada', serif;
-font-family: 'Belleza', sans-serif;
-font-family: 'Corben', cursive;
-font-family: 'Lalezar', cursive;
-font-family: 'Muli', sans-serif;
-font-family: 'Open Sans', sans-serif;
-*/
 .navbar-dark {
   background-color: #a65b5b;
 }
 
+.navbar-dark .navbar-brand {
+  width: 100%;
+  margin: 0;
+  text-align: center;
+}
+
 header {
-  margin-top: 50px;
-  height: 80vh;
+  height: 94vh;
   background-image: url("Pic_Collate.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   color: floralwhite;
+}
+
+header .header-card h3 {
+  font-family: "Muli", sans-serif;
+  font-weight: bold;
+}
+
+header .header-card small {
+  font-family: "Belleza", sans-serif;
 }
 
 header .header-card button {
@@ -36,10 +42,11 @@ header .header-card button {
 
 .guide h1 {
   color: floralwhite;
-  font-size: 1.6em;
+  font-family: "Lalezar", cursive;
+  font-size: 1.8em;
   border: 2px solid floralwhite;
   text-align: center;
-  padding: 5px 0px 10px 0px;
+  padding: 5px 5px 0px 5px;
   margin: 0px;
   min-width: 100%;
 }
@@ -52,6 +59,8 @@ header .header-card button {
 
 .guide #guide-heading-sub {
   color: #bff8ee;
+  font-family: "Andada", serif;
+  font-size: 1.3em;
 }
 
 .guide .step-div .step-heading {
@@ -60,11 +69,20 @@ header .header-card button {
   min-width: 60%;
   margin: 10px auto;
   padding: 5px 0 7px 0;
+  font-family: "Muli", sans-serif;
+  font-weight: bold;
   font-size: 1.3em;
+}
+
+.guide .step-div img {
+  height: 60%;
+  width: 60%;
 }
 
 .guide .step-div p {
   text-align: center;
+  font-family: "Muli", sans-serif;
+  font-weight: lighter;
 }
 
 .guide .step-div span {
@@ -78,24 +96,59 @@ header .header-card button {
   background-image: url("./3rd_portion.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: -150px;
+}
+
+.benefits .col-12 {
+  background-color: rgba(13, 25, 42, 0.5);
+}
+
+.benefits h1 {
+  /*Little Savings Matter*/
+  font-family: "brusherregular", cursive;
+  color: floralwhite;
+  padding: 15px;
+  width: 100%;
+  text-align: center;
 }
 
 .benefits .benefit-box {
   border: 3px solid floralwhite;
   padding: 0px 20px 0px 20px;
-  min-width: 60%;
+  min-width: 100%;
   margin-bottom: 30px;
-  text-align: right;
+  text-align: center;
   color: floralwhite;
+}
+
+.benefits .benefit-box h3 {
+  font-family: "Muli", sans-serif;
+  font-weight: bold;
+}
+
+.benefits .benefit-box p {
+  font-family: "Corben", cursive;
+  font-weight: normal;
 }
 
 .partners {
   background: #0c1829;
   background: linear-gradient(156deg, #0c1829 0%, #0d192a 9%, #3f6066 100%);
+  height: 45vh;
 }
 
-.partners .partners-heading {
+.partners .partners-heading h1 {
   color: floralwhite;
+  font-family: "brusherregular", cursive;
+}
+
+.partners .partners-heading p {
+  color: #928F90;
+  font-family: "cooper_hewittbook", cursive;
+}
+
+.partners .img-thumbnail {
+  background-color: #3f6066;
 }
 
 #carouselPartners {
@@ -107,19 +160,34 @@ header .header-card button {
   background: linear-gradient(156deg, #fcfafa 0%, #ebdbdb 8%, #bc8484 100%);
 }
 
-.sub-form-div #sub-form-heading {
-  color: #4a6f73;
+.subscribtion-row #subscribtion-heading {
+  font-family: "gagalinregular", serif;
+  font-size: 2em;
+  width: 100%;
+  text-align: center;
 }
 
-.sub-form-div .sub-form-input {
+.subscribtion-row .sub-form-div #sub-form-heading {
+  color: #4a6f73;
+  font-family: "glacial_indifferencebold", serif;
+  font-size: 1.4em;
+}
+
+.subscribtion-row .sub-form-div .sub-form-input {
   background: transparent;
   text-align: center;
   border: 2px solid #636162;
+  font-family: "glacial_indifferenceregular", serif;
 }
 
-.sub-form-div .sub-btn {
+.subscribtion-row .sub-form-div small {
+  font-family: "glacial_indifferenceregular", serif;
+}
+
+.subscribtion-row .sub-form-div .sub-btn {
   background-color: #a65b5b;
   color: floralwhite;
+  font-family: "cooper_hewittbook", cursive;
   padding: 5px 40px 5px 40px;
   border: none;
 }
@@ -133,8 +201,30 @@ footer .row-content {
   min-height: 30vh;
 }
 
+footer h5 {
+  color: floralwhite;
+  font-family: "Muli", sans-serif;
+}
+
 footer li {
   list-style: none;
+}
+
+footer li a {
+  font-family: "Muli", sans-serif;
+  font-weight: 200;
+  color: #DFD8D8;
+  text-decoration: none;
+}
+
+footer li a:hover {
+  color: floralwhite;
+  text-decoration: none;
+}
+
+footer #copyright {
+  font-family: "Open Sans", sans-serif;
+  font-size: .2em;
 }
 
 footer a {

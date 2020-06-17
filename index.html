@@ -21,16 +21,20 @@
 
 	<!-- Custom Fonts -->
 	<link href="https://fonts.googleapis.com/css2?family=Andada&family=Belleza&family=Corben&family=Lalezar&family=Muli:wght@200;300;400;500;600;700&family=Open+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./fonts/Brusher/stylesheet.css">
+	<link rel="stylesheet" href="./fonts/Cooper/stylesheet.css">
+	<link rel="stylesheet" href="./fonts/Gagalin/stylesheet.css">
+	<link rel="stylesheet" href="./fonts/Glacial/stylesheet.css">
 
 </head>
 <body>
-	<nav class="navbar navbar-dark navbar-expand-lg fixed-top">
+	<nav class="navbar navbar-dark navbar-expand-lg ">
 		<div class="container-fluid">
 			<a class="navbar-brand" href="#">MyKashBack</a>
 			<!--<button class="navbar-toggler" data-toggle='collapse' data-target='#navbar'>
 				<i class="navbar-toggler-icon"></i>
 			</button>-->
-			<div class="collapse " id="navbar">
+			<div class="collapse d-none" id="navbar">
 				<ul class="navbar-nav">
 					<li class="nav-item">
 						<a class="nav-link active" href="">Home</a>
@@ -63,16 +67,16 @@
 
 	<div class="container-fluid">
 		<div class="row row-content guide">
-			<div class="col-12 h-25 ">
-				<div class="d-flex justify-content-center ">
-					<h1 class="mt-3">How myKashBack Works</h1>
+			<div class="col-12 h-25 mt-5">
+				<div class="d-flex justify-content-center p-0">
+					<h1>How myKashBack Works</h1>
 				</div>
-				<p class="text-center " id="guide-heading-sub">It's much easier than you think</p>
+				<p class="text-center mt-1" id="guide-heading-sub">It's much easier than you think</p>
 			</div>
-			<div class="col-12 col-sm-4">
+			<div class="col-12 col-sm-4 mt-5">
 				<div class="d-flex flex-column step-div pb-5">
 					<h2 class="step-heading">Download</h2>
-					<img class="img-fluid " src="img/White-mobile-circle-1.png">
+					<img class="img-fluid mx-auto" src="img/White-mobile-circle-1.png">
 					<p class="py-5">Download the App and find the nearest business you want to get cashback from</p>
 					<span class="align-self-center"></span>
 				</div> 
@@ -80,7 +84,7 @@
 			<div class="col-12 col-sm-4 ">
 				<div class="d-flex flex-column step-div pb-5">
 					<h2 class="step-heading">Scan</h2>
-					<img class="img-fluid " src="img/White-mobile-circle-numeric-2.png">
+					<img class="img-fluid mx-auto" src="img/White-mobile-circle-numeric-2.png">
 					<p class="py-5">Once you have spent there, ask the merchant to provide the QR code and scan it.</p>
 					<span class="align-self-center"></span>
 				</div>
@@ -88,7 +92,7 @@
 			<div class="col-12 col-sm-4">
 				<div class="d-flex flex-column step-div pb-5">
 					<h2 class="step-heading">Earn Cashback</h2>
-					<img class="img-fluid " src="img/White-mobile-circle-numeric-3.png">
+					<img class="img-fluid mx-auto" src="img/White-mobile-circle-numeric-3.png">
 					<p class="py-5">Get your KashBack account credited with the kashback amount immediately.</p>
 					<span class="align-self-center"></span>
 				</div>
@@ -129,31 +133,16 @@
 				</div>
 			</div>
 			<div class="col-12"> <!-- Carousel of Partners -->
-				<div id="carouselPartners" class="carousel slide" data-ride="carousel" >
-					<div class="carousel inner px-5">
+				<div id="carouselPartners" class="carousel slide h-100" data-ride="" >
+					<div class="carousel inner h-100">
 						<div class="carousel-item active ">
 							<div class="row">
 								<div class="col">
-									<img class="img-fluid d-block rounded-circle" src="http://via.placeholder.com/150x150">
-								</div>
-								<div class="col">
-									<img class="img-fluid d-block rounded-circle" src="http://via.placeholder.com/150x150">
-								</div>
-								<div class="col">
-									<img class="img-fluid d-block rounded-circle" src="http://via.placeholder.com/150x150">
-								</div>
-								<div class="col">
-									<img class="img-fluid d-block rounded-circle" src="http://via.placeholder.com/150x150">
-								</div>
-								<div class="col">
-									<img class="img-fluid d-block rounded-circle" src="http://via.placeholder.com/150x150">
-								</div>
-								<div class="col">
-									<img class="img-fluid d-block rounded-circle" src="http://via.placeholder.com/150x150">
+									<img class="img-fluid img-thumbnail img-responsive rounded-circle partner-logo" src="./img/partners/Turkuoise.png">
 								</div>
 							</div>
 						</div>
-						<div class="carousel-item">
+					<!--	<div class="carousel-item">
 							<div class="row">
 								<div class="col">
 									<img class="img-fluid d-block rounded-circle" src="http://via.placeholder.com/150x150">
@@ -164,33 +153,23 @@
 								<div class="col">
 									<img class="img-fluid d-block rounded-circle" src="http://via.placeholder.com/150x150">
 								</div>
-								<div class="col">
-									<img class="img-fluid d-block rounded-circle" src="http://via.placeholder.com/150x150">
-								</div>
-								<div class="col">
-									<img class="img-fluid d-block rounded-circle" src="http://via.placeholder.com/150x150">
-								</div>
-								<div class="col">
-									<img class="img-fluid d-block rounded-circle" src="http://via.placeholder.com/150x150">
-								</div>
 							</div>
-						</div>
+						</div> -->
 						<ol class="carousel-indicators">
 							<li data-target="#carouselPartners" data-slide-to='0' class="active"></li>
-							<li data-target="#carouselPartners" data-slide-to='1'></li>
-						</ol>
+						</ol> 
 					</div>
 				</div>
 			</div>
 		</div>
 
 		<div class="row row-content subscribtion-row pt-4">
-			<div class="col-12">
+			<div class="col-12 ">
 				<div class="d-flex justify-content-center">
-					<h1>FIND OUT BEST OFFERS AROUND YOU</h1>
+					<h1 id="subscribtion-heading">FIND OUT BEST OFFERS AROUND YOU</h1>
 				</div>
 			</div>
-			<div class="col-4 offset-4 sub-form-div mb-5">
+			<div class="col-10 offset-1 sub-form-div mb-5 ">
 				<form class="">
 					<div class="d-flex flex-column">
 						<h3 id="sub-form-heading" class="mx-auto">Subscribe for updates</h3>
@@ -220,27 +199,27 @@
 	<footer class="pt-5">
 		<div class="container-fluid">
 			<div class="row row-content">
-				<div class="col-8 offset-1">
+				<div class="col-12">
 					<div class="d-flex justify-content-between">
 						<div>
-							<h5>Support</h5>
-							<ul class="px-0">
-								<li class="d-inline-block"><a href="">Contact</a></li>
-								<li class="d-inline-block ml-1"><a href="">MyKashback Team</a></li>
-								<li style="list-style: none;"><a href="">FAQs</a></li>
+							<ul class="list-group">
+								<h5>Support</h5>
+								<li><a href="">Contact</a></li>
+								<li><a href="">MyKashback Team</a></li>
+								<li><a href="">FAQs</a></li>
 							</ul>
 						</div>
 						<div>
-							<h5>MyKashback</h5>
 							<ul class="list-group">
+								<h5>MyKashback</h5>
 								<li><a href="">About us</a></li>
 								<li><a href="">Careers</a></li>
 								<li><a href="">Charity</a></li>
 							</ul>
 						</div>
 						<div>
-							<h5>Legal</h5>
-							<ul class="list-group">
+							<ul class="list-group-horizontal">
+								<h5>Legal</h5>
 								<li><a href="">Privacy Policy</a></li>
 								<li><a href="">Careers</a></li>
 								<li><a href="">Charity</a></li>
@@ -248,14 +227,14 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-2">
+				
+				<div class="col-12">
 					<div class="d-flex justify-content-center">
-						<a class="btn  btn-social-icon "><i class="fab fa-facebook fa-lg"></i></a>
+						<a class="btn  btn-social-icon "><i class="fab fa-facebook fa-lg text-white bg-dark"></i></a>
 						<a class="btn  btn-social-icon mx-2" id="insta-btn"><i class="fab fa-instagram fa-lg"></i></a>
 						<a class="btn  btn-social-icon "><i class="fab fa-twitter fa-lg social-icon"></i></a>	
 					</div>
 				</div>
-				<div class="co-1"></div>
 
 				<div class="col-12">
 					<div class="d-flex justify-content-center">

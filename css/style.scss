@@ -2,14 +2,19 @@ $colors: (
 	"primary": #a65b5b
 );
 
-/*
-font-family: 'Andada', serif;
-font-family: 'Belleza', sans-serif;
-font-family: 'Corben', cursive;
-font-family: 'Lalezar', cursive;
-font-family: 'Muli', sans-serif;
-font-family: 'Open Sans', sans-serif;
-*/
+
+$font-Andada: 'Andada', serif;
+$font-Bellaza: 'Belleza', sans-serif;
+$font-Corben: 'Corben', cursive;
+$font-Lalezar: 'Lalezar', cursive;
+$font-Muli: 'Muli', sans-serif;
+$font-OpenSans: 'Open Sans', sans-serif;
+$font-Brusher: 'brusherregular', cursive;
+$font-Gagalin: "gagalinregular", serif;
+$font-GlacialBold: "glacial_indifferencebold", serif;
+$font-Galcial: 'glacial_indifferenceregular', serif;
+$font-Cooper: "cooper_hewittbook", cursive;
+
 
 $desktop: 840px;
 $iphone-5: 320px;
@@ -29,10 +34,14 @@ $iphone-5: 320px;
 
 .navbar-dark{
 	background-color: color(primary);
+	.navbar-brand{
+		width: 100%;
+		margin: 0;
+		text-align: center;
+	}
 }
 header{
-	margin-top: 50px;
-	height: 80vh;
+	height: 94vh;
 	background-image: url('Pic_Collate.png');
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -40,7 +49,14 @@ header{
 	color: floralwhite;
 
 	.header-card{
-		
+		h3{
+			font-family: $font-Muli;
+			font-weight: bold;
+		}
+
+		small{
+			font-family: $font-Bellaza;
+		}
 
 		button{
 			font-size: 1em !important;
@@ -62,10 +78,11 @@ header{
 
 	h1{
 		color: floralwhite;
-		font-size: 1.6em;
+		font-family: $font-Lalezar;
+		font-size: 1.8em;
 		border:2px solid floralwhite;
 		text-align: center;
-		padding: 5px 0px 10px 0px;
+		padding: 5px 5px 0px 5px;
 		margin: 0px;
 		min-width: 100%;
 
@@ -75,6 +92,8 @@ header{
 	}
 	#guide-heading-sub {
 		color: #bff8ee;
+		font-family: $font-Andada;
+		font-size: 1.3em;
 	}
 	
 
@@ -86,15 +105,21 @@ header{
 		min-width: 60%;
 		margin: 10px auto;
 		padding: 5px 0 7px 0;
+		font-family: $font-Muli;
+		font-weight: bold;
 		font-size: 1.3em;
 		}
 
 		img{
+			height: 60%;
+			width: 60%;
 			
 		}
 
 		p{
 			text-align: center;
+			font-family: $font-Muli;
+			font-weight: lighter;
 		}
 
 		span{
@@ -109,23 +134,57 @@ header{
 	background-image: url("./3rd_portion.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: -150px;
+
+	.col-12{
+		background-color: rgba(13,25,42,.5);
+	}
 	
+	h1{ /*Little Savings Matter*/
+		font-family: $font-Brusher;
+		color: floralwhite;
+		padding: 15px;
+		width: 100%;
+		text-align: center;
+	}
 
 	.benefit-box{
 		border: 3px solid floralwhite;
 		padding: 0px 20px 0px 20px;
-		min-width: 60%;
+		min-width: 100%;
 		margin-bottom: 30px;
-		text-align: right;
+		text-align: center;
 		color: floralwhite;
+
+		h3{
+			font-family: $font-Muli;
+			font-weight: bold;
+		}
+		p{
+			font-family: $font-Corben;
+			font-weight: normal;
+		}
 	}
 }
 .partners{
 	background: rgb(12,24,41);
 	background: linear-gradient(156deg, rgba(12,24,41,1) 0%, rgba(13,25,42,1) 9%, rgba(63,96,102,1) 100%);
-
+	height: 45vh;
 	.partners-heading{
-		color: floralwhite;
+		h1{
+			color: floralwhite;
+			font-family: $font-Brusher;
+		}
+		p{
+			color: #928F90;
+			font-family: $font-Cooper;
+		}
+	}
+	.img-thumbnail{
+		background-color: rgba(63,96,102,1);
+	}
+	#carouselPartners{
+		
 	}
 }
 #carouselPartners{
@@ -134,37 +193,79 @@ header{
 .subscribtion-row{
 	background: rgb(252,250,250);
 	background: linear-gradient(156deg, rgba(252,250,250,1) 0%, rgba(235,219,219,1) 8%, rgba(188,132,132,1) 100%);
-}
-.sub-form-div{
-	#sub-form-heading{
-		color: #4a6f73;
-	}
+	
 
-	.sub-form-input{
-		background: transparent;
+	#subscribtion-heading{
+		font-family: $font-Gagalin;
+		font-size: 2em;
+		width: 100%;
 		text-align: center;
-		border: 2px solid #636162;
 	}
 
-	.sub-btn{
-		background-color: #a65b5b;
-		color: floralwhite;
-		padding: 5px 40px 5px 40px;
-		border: none;
+	.sub-form-div{
+		#sub-form-heading{
+			color: #4a6f73;
+			font-family: $font-GlacialBold;
+			font-size: 1.4em;
+			
+		}
+
+		.sub-form-input{
+			background: transparent;
+			text-align: center;
+			border: 2px solid #636162;
+			font-family: $font-Galcial;
+		}
+
+		small{
+			font-family: $font-Galcial;
+			
+		}
+
+		.sub-btn{
+			background-color: color(primary);
+			color: floralwhite;
+			font-family: $font-Cooper;
+			padding: 5px 40px 5px 40px;
+			border: none;
+		}
 	}
+
 }
+
 
 footer{
 	background: rgb(165,90,90);
 	background: linear-gradient(156deg, rgba(165,90,90,1) 0%, rgba(40,22,22,1) 100%);
-}
+	.row-content{
+		min-height: 30vh;
+	}
 
-footer .row-content{
-	min-height: 30vh;
-}
+	h5{
+		color: floralwhite;
+		font-family: $font-Muli;
+	}
+	
+	li{
+		list-style: none;
+		a{
+			font-family: $font-Muli;
+			font-weight: 200;
+			color: #DFD8D8;
+			text-decoration: none;
+		}
+		a:hover{
+			color: floralwhite;
+			text-decoration: none;
+		}
+		
+	}
 
-footer li{
-	list-style: none;
+	#copyright{
+		font-family: $font-OpenSans;
+		font-size: .2em;
+	}
+
 }
 
 footer a{
