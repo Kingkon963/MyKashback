@@ -17,6 +17,7 @@ $font-Cooper: "cooper_hewittbook", cursive;
 
 
 $desktop: 840px;
+$md: 576px;
 $iphone-5: 320px;
 
 @mixin desktop {
@@ -24,6 +25,12 @@ $iphone-5: 320px;
 		@content;
 	}
 }
+@mixin tablet {
+	@media only screen and(min-width:#{$md}){
+		@content;
+	}
+}
+
 
 
 @function color($color-name){
@@ -31,17 +38,22 @@ $iphone-5: 320px;
 }
 
 
-
 .navbar-dark{
 	background-color: color(primary);
 	.navbar-brand{
-		width: 100%;
-		margin: 0;
+		margin: 0px;
 		text-align: center;
+		padding: 0px;
+
+		img{
+			width: 200px;
+			height: auto;
+			
+		}
 	}
 }
 header{
-	height: 94vh;
+	height: 87vh;
 	background-image: url('Pic_Collate.png');
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -63,12 +75,10 @@ header{
 		}
 	}
 }
-.intro-div{
-
-}
 
 .row-content{
 	min-height: 60vh;
+	overflow-x: hidden;
 }
 
 .guide{
@@ -99,6 +109,8 @@ header{
 
 	.step-div{
 
+		min-height: 500px;
+
 		.step-heading{
 		border: 2px solid floralwhite;
 		text-align: center;
@@ -111,9 +123,8 @@ header{
 		}
 
 		img{
-			height: 60%;
 			width: 60%;
-			
+			height: auto;
 		}
 
 		p{

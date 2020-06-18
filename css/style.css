@@ -3,13 +3,18 @@
 }
 
 .navbar-dark .navbar-brand {
-  width: 100%;
-  margin: 0;
+  margin: 0px;
   text-align: center;
+  padding: 0px;
+}
+
+.navbar-dark .navbar-brand img {
+  width: 200px;
+  height: auto;
 }
 
 header {
-  height: 94vh;
+  height: 87vh;
   background-image: url("Pic_Collate.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -32,6 +37,7 @@ header .header-card button {
 
 .row-content {
   min-height: 60vh;
+  overflow-x: hidden;
 }
 
 .guide {
@@ -63,6 +69,10 @@ header .header-card button {
   font-size: 1.3em;
 }
 
+.guide .step-div {
+  min-height: 500px;
+}
+
 .guide .step-div .step-heading {
   border: 2px solid floralwhite;
   text-align: center;
@@ -75,8 +85,8 @@ header .header-card button {
 }
 
 .guide .step-div img {
-  height: 60%;
   width: 60%;
+  height: auto;
 }
 
 .guide .step-div p {
