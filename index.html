@@ -30,7 +30,7 @@
 <body>
 	<nav class="navbar navbar-dark navbar-expand-lg ">
 		<div class="container-fluid">
-			<a class="navbar-brand bg-primary mx-auto" href="#"><img class="img-fluid img-responsive" src="./img/K_Logo_Mykashback.png" alt=""></a>
+			<a class="navbar-brand bg-primary mx-auto mx-md-0" href="#"><img class="img-fluid img-responsive" src="./img/K_Logo_Mykashback.png" alt=""></a>
 			<!--<button class="navbar-toggler" data-toggle='collapse' data-target='#navbar'>
 				<i class="navbar-toggler-icon"></i>
 			</button>
@@ -46,11 +46,12 @@
 			</div> -->
 		</div>
 	</nav>
+	<!--Modal for Stores-->
 
 	<header class="">
 		<div class="container-fluid h-100">
 			<div class="row h-100">
-				<div class="bg-primary col-12 col-sm-6 offset-sm-3 d-flex align-items-center intro-div">
+				<div class="col-12 col-md-6 offset-md-3 d-flex align-items-center intro-div">
 					<div class="w-100 py-3 header-card">
 						<h3 class="text-center my-0">GET CASHBACK</h3>
 						<h3 class="text-center my-0">EVERYTIME YOU SPEND</h3>
@@ -67,45 +68,45 @@
 
 	<div class="container-fluid">
 		<div class="row row-content guide">
-			<div class="col-12 h-25 mt-5">
-				<div class="d-flex justify-content-center p-0">
+			<div class="col-12 h-25 mt-5 mt-md-4">
+				<div class="d-flex justify-content-center">
 					<h1>How myKashBack Works</h1>
 				</div>
 				<p class="text-center mt-1" id="guide-heading-sub">It's much easier than you think</p>
 			</div>
-			<div class="col-12 col-sm-4 mt-5 mt-sm-0">
+			<div class="col-12 col-sm-4 mt-5 mt-sm-0 mt-md-4">
 				<div class="d-flex flex-column step-div pb-5">
 					<h2 class="step-heading">Download</h2>
 					<img class="img-fluid mx-auto" src="img/White-mobile-circle-1.png">
-					<p class="py-5">Download the App and find the nearest business you want to get cashback from</p>
+					<p class="">Download the App and find the nearest business you want to get cashback from</p>
 					<span class="align-self-center"></span>
 				</div> 
 			</div>
-			<div class="col-12 col-sm-4 ">
+			<div class="col-12 col-sm-4 mt-md-4">
 				<div class="d-flex flex-column step-div pb-5">
 					<h2 class="step-heading">Scan</h2>
-					<img class="img-fluid mx-auto" src="img/White-mobile-circle-numeric-2.png">
-					<p class="py-5">Once you have spent there, ask the merchant to provide the QR code and scan it.</p>
+					<img class="img-fluid mx-auto" src="img/White-mobile-circle-numeric-2.png" id="step-2-img">
+					<p class="">Once you have spent there, ask the merchant to provide the QR code and scan it.</p>
 					<span class="align-self-center"></span>
 				</div>
 			</div>
-			<div class="col-12 col-sm-4">
+			<div class="col-12 col-sm-4 mt-md-4">
 				<div class="d-flex flex-column step-div pb-5">
 					<h2 class="step-heading">Earn Cashback</h2>
-					<img class="img-fluid mx-auto" src="img/White-mobile-circle-numeric-3.png">
-					<p class="py-5">Get your KashBack account credited with the kashback amount immediately.</p>
+					<img class="img-fluid mx-auto" src="img/White-mobile-circle-numeric-3.png" id="step-3-img">
+					<p class="">Get your KashBack account credited with the kashback amount immediately.</p>
 					<span class="align-self-center"></span>
 				</div>
 			</div>
 		</div>
 
 		<div class="row row-content benefits">
-			<div class="col-12 col-sm-6">
+			<div class="col-12 col-sm-4 col-md-6">
 				<div class="d-flex justify-content-center justify-content-sm-start align-items-sm-end h-100">
 					<h1>Little<br>savings<br>matter</h1>
 				</div>
 			</div>
-			<div class="col-12 col-sm-6">
+			<div class="col-12 col-sm-8 col-md-6" id="benefits-benefit">
 				<div class="d-flex flex-column justify-content-center align-items-end h-100">
 					<div class="benefit-box">
 						<h3>Absolutely Free</h3>
@@ -132,7 +133,7 @@
 					</div>
 				</div>
 			</div>
-		<!--	<div class="col-12"> 
+			<div class="col-12"> 
 				<div id="carouselPartners" class="carousel slide h-100" data-ride="" >
 					<div class="carousel inner h-100">
 						<div class="carousel-item active ">
@@ -160,7 +161,7 @@
 						</ol> 
 					</div>
 				</div>
-			</div>  -->
+			</div>  
 		</div>
 
 		<div class="row row-content subscribtion-row pt-4">
@@ -169,7 +170,7 @@
 					<h1 id="subscribtion-heading">FIND OUT BEST OFFERS AROUND YOU</h1>
 				</div>
 			</div>
-			<div class="col-10 offset-1 sub-form-div mb-5 ">
+			<div class="col-10 offset-1 col-md-4 offset-md-4 sub-form-div mb-5 ">
 				<form class="">
 					<div class="d-flex flex-column">
 						<h3 id="sub-form-heading" class="mx-auto">Subscribe for updates</h3>
@@ -199,7 +200,7 @@
 	<footer class="pt-5">
 		<div class="container-fluid">
 			<div class="row row-content">
-				<div class="col-12">
+				<div class="col-12 col-md-10">
 					<div class="d-flex justify-content-between">
 						<div>
 							<ul class="list-group">
@@ -218,7 +219,7 @@
 							</ul>
 						</div>
 						<div>
-							<ul class="list-group-horizontal">
+							<ul class="list-group">
 								<h5>Legal</h5>
 								<li><a href="">Privacy Policy</a></li>
 								<li><a href="">Careers</a></li>
@@ -228,15 +229,18 @@
 					</div>
 				</div>
 				
-				<div class="col-12">
-					<div class="d-flex justify-content-center">
-						<a class="btn  btn-social-icon "><i class="fab fa-facebook fa-lg text-white bg-dark"></i></a>
-						<a class="btn  btn-social-icon mx-2" id="insta-btn"><i class="fab fa-instagram fa-lg"></i></a>
-						<a class="btn  btn-social-icon "><i class="fab fa-twitter fa-lg social-icon"></i></a>	
+				<div class="col-12 col-md-2">
+					<div class="d-flex flex-column justify-content-center">
+						<div class="d-flex justify-content-center align-items-center">
+							<a class="btn  "><i class="fab fa-facebook fa-lg bg-dark text-white"></i></a>
+							<a class="btn  "><i class="fab fa-instagram fa-lg"></i></a>
+							<a class="btn  "><i class="fab fa-twitter fa-lg"></i></a>	
+						</div>
+						<h4 class="text-center" id="hashTag">#mykashback</h4>
 					</div>
 				</div>
 
-				<div class="col-12">
+				<div class="col-12 mt-md-auto">
 					<div class="d-flex justify-content-center">
 						<p id="copyright">Copyright 2020, MyKashback Limited. Registered in England and Wales, No. 12077790<br>Registered Address: Kemp House, 152 - 160 City Road, London, United Kingdom, EC1V 2NX| support@mykashback.co.uk</p>
 					</div>

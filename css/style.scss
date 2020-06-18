@@ -17,7 +17,7 @@ $font-Cooper: "cooper_hewittbook", cursive;
 
 
 $desktop: 840px;
-$md: 576px;
+$sm: 576px;
 $iphone-5: 320px;
 
 @mixin desktop {
@@ -26,7 +26,7 @@ $iphone-5: 320px;
 	}
 }
 @mixin tablet {
-	@media only screen and(min-width:#{$md}){
+	@media only screen and(min-width:#{$sm}){
 		@content;
 	}
 }
@@ -53,7 +53,7 @@ $iphone-5: 320px;
 	}
 }
 header{
-	height: 87vh;
+	height: 93vh;
 	background-image: url('Pic_Collate.png');
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -64,10 +64,16 @@ header{
 		h3{
 			font-family: $font-Muli;
 			font-weight: bold;
+			@include desktop(){
+				font-size: 3em;
+			}
 		}
 
 		small{
 			font-family: $font-Bellaza;
+			@include desktop(){
+				font-size: 1.5em;
+			}
 		}
 
 		button{
@@ -95,9 +101,16 @@ header{
 		padding: 5px 5px 0px 5px;
 		margin: 0px;
 		min-width: 100%;
+		@include desktop(){
+			font-size: 3em;
+			
+		}
 
 		@media only screen and(max-width: $iphone-5){
 			font-size: 1.3em;
+		}
+		@include tablet(){
+			min-width: 60%;
 		}
 	}
 	#guide-heading-sub {
@@ -110,21 +123,43 @@ header{
 	.step-div{
 
 		min-height: 500px;
+		@include desktop(){
+			min-height: 600px;
+		}
+		@include tablet(){
+			min-height: 400px;
+		}
 
 		.step-heading{
 		border: 2px solid floralwhite;
 		text-align: center;
 		min-width: 60%;
 		margin: 10px auto;
-		padding: 5px 0 7px 0;
+		padding-top: 5px;
+		padding-bottom: 5px;
 		font-family: $font-Muli;
 		font-weight: bold;
 		font-size: 1.3em;
+		@include tablet(){
+			padding-left: 20px;
+			padding-right: 20px;
+		}
 		}
 
 		img{
 			width: 60%;
 			height: auto;
+		}
+
+		@include desktop(){
+			#step-2-img{
+				width: 59%; 
+				height: auto;
+			}
+			#step-3-img{
+				width: 58%; 
+				height: auto;
+			}
 		}
 
 		p{
@@ -137,7 +172,18 @@ header{
 			width: 30%;
 			height: 15px;
 			border-radius: 20px 20px;
+			margin-top: auto;
 			background-color: color(primary);
+			@include tablet(){
+				width: 50%;
+				height: 10px;
+				margin: auto 0px;
+			}
+			@include desktop(){
+				height: 15px;
+				width: 30%;
+				margin: auto 0px;
+			}
 		}
 	}
 }
@@ -146,17 +192,30 @@ header{
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: -150px;
-
+	
 	.col-12{
 		background-color: rgba(13,25,42,.5);
 	}
-	
+	#benefits-benefit {
+		@include tablet(){
+			padding-top: 4%;
+		}
+		@include desktop(){
+			padding-top: 2%;
+		}
+	}
 	h1{ /*Little Savings Matter*/
 		font-family: $font-Brusher;
 		color: floralwhite;
 		padding: 15px;
 		width: 100%;
 		text-align: center;
+		@include tablet(){
+			text-align: left;
+		}
+		@include desktop(){
+			font-size: 4em;
+		}
 	}
 
 	.benefit-box{
@@ -180,11 +239,16 @@ header{
 .partners{
 	background: rgb(12,24,41);
 	background: linear-gradient(156deg, rgba(12,24,41,1) 0%, rgba(13,25,42,1) 9%, rgba(63,96,102,1) 100%);
-	height: 45vh;
 	.partners-heading{
+		@include desktop(){
+			padding-bottom: 50px;
+		}
 		h1{
 			color: floralwhite;
 			font-family: $font-Brusher;
+			@include desktop(){
+				font-size: 3em;
+			}
 		}
 		p{
 			color: #928F90;
@@ -195,12 +259,20 @@ header{
 		background-color: rgba(63,96,102,1);
 	}
 	#carouselPartners{
-		
+		min-height: 300px;
+		@include desktop(){
+			min-height: 450px;
+		}
+		.partner-logo{
+			@include tablet(){
+				width: 25%;
+				height: auto;
+			}
+		}
 	}
 }
-#carouselPartners{
-	overflow-x: hidden;
-}
+
+
 .subscribtion-row{
 	background: rgb(252,250,250);
 	background: linear-gradient(156deg, rgba(252,250,250,1) 0%, rgba(235,219,219,1) 8%, rgba(188,132,132,1) 100%);
@@ -211,6 +283,9 @@ header{
 		font-size: 2em;
 		width: 100%;
 		text-align: center;
+		@include desktop(){
+			font-size: 3em;
+		}
 	}
 
 	.sub-form-div{
@@ -218,7 +293,9 @@ header{
 			color: #4a6f73;
 			font-family: $font-GlacialBold;
 			font-size: 1.4em;
-			
+			@include desktop(){
+				
+			}
 		}
 
 		.sub-form-input{
@@ -248,6 +325,10 @@ header{
 footer{
 	background: rgb(165,90,90);
 	background: linear-gradient(156deg, rgba(165,90,90,1) 0%, rgba(40,22,22,1) 100%);
+	font-size: .7em;
+	@include desktop(){
+		padding: 0px 100px;
+	}
 	.row-content{
 		min-height: 30vh;
 	}
@@ -275,14 +356,39 @@ footer{
 	#copyright{
 		font-family: $font-OpenSans;
 		font-size: .2em;
+		text-align: center;
+		color: #a1a1a1;
+		font-weight: lighter;
+		@include tablet(){
+			font-size: .6em;
+		}
+		@include desktop(){
+			font-size: 1em;
+			margin-top: auto;
+		}
+	}
+	.btn-social-icon{
+		background-color: floralwhite;
+		border-radius: 50%;
+		color: #636162;
+	}
+	.fa-facebook , .fa-twitter, .fa-instagram{
+		font-size: 2em;
+		border-radius: 50%;
+	}
+	.fa-instagram{
+		background: transparent;
+		color: floralwhite;
+	}
+	.fa-twitter{
+		color: floralwhite;
+	}		
+
+	#hashTag{
+		color: floralwhite;
+		font-family: $font-Muli;
 	}
 
-}
-
-footer a{
-	color: floralwhite;
-	text-decoration: none;
-	font-weight: lighter;
 }
 
 foot-list-support{
@@ -293,18 +399,3 @@ foot-list-support li{
 	color: red;
 }
 
-.btn-social-icon{
-	background-color: floralwhite;
-	border-radius: 50%;
-	color: #636162;
-}
-#insta-btn{
-	background: transparent;
-	color: floralwhite;
-	font-size: 20px;
-}
-#copyright{
-	text-align: center;
-	color: #a1a1a1;
-	font-weight: lighter;
-}

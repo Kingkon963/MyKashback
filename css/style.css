@@ -14,7 +14,7 @@
 }
 
 header {
-  height: 87vh;
+  height: 93vh;
   background-image: url("Pic_Collate.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -27,8 +27,20 @@ header .header-card h3 {
   font-weight: bold;
 }
 
+@media only screen and (min-width: 840px) {
+  header .header-card h3 {
+    font-size: 3em;
+  }
+}
+
 header .header-card small {
   font-family: "Belleza", sans-serif;
+}
+
+@media only screen and (min-width: 840px) {
+  header .header-card small {
+    font-size: 1.5em;
+  }
 }
 
 header .header-card button {
@@ -57,9 +69,21 @@ header .header-card button {
   min-width: 100%;
 }
 
+@media only screen and (min-width: 840px) {
+  .guide h1 {
+    font-size: 3em;
+  }
+}
+
 @media only screen and (max-width: 320px) {
   .guide h1 {
     font-size: 1.3em;
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  .guide h1 {
+    min-width: 60%;
   }
 }
 
@@ -73,20 +97,51 @@ header .header-card button {
   min-height: 500px;
 }
 
+@media only screen and (min-width: 840px) {
+  .guide .step-div {
+    min-height: 600px;
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  .guide .step-div {
+    min-height: 400px;
+  }
+}
+
 .guide .step-div .step-heading {
   border: 2px solid floralwhite;
   text-align: center;
   min-width: 60%;
   margin: 10px auto;
-  padding: 5px 0 7px 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
   font-family: "Muli", sans-serif;
   font-weight: bold;
   font-size: 1.3em;
 }
 
+@media only screen and (min-width: 576px) {
+  .guide .step-div .step-heading {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
 .guide .step-div img {
   width: 60%;
   height: auto;
+}
+
+@media only screen and (min-width: 840px) {
+  .guide .step-div #step-2-img {
+    width: 59%;
+    height: auto;
+  }
+  .guide .step-div #step-3-img {
+    width: 58%;
+    height: auto;
+  }
 }
 
 .guide .step-div p {
@@ -99,7 +154,24 @@ header .header-card button {
   width: 30%;
   height: 15px;
   border-radius: 20px 20px;
+  margin-top: auto;
   background-color: #a65b5b;
+}
+
+@media only screen and (min-width: 576px) {
+  .guide .step-div span {
+    width: 50%;
+    height: 10px;
+    margin: auto 0px;
+  }
+}
+
+@media only screen and (min-width: 840px) {
+  .guide .step-div span {
+    height: 15px;
+    width: 30%;
+    margin: auto 0px;
+  }
 }
 
 .benefits {
@@ -113,6 +185,18 @@ header .header-card button {
   background-color: rgba(13, 25, 42, 0.5);
 }
 
+@media only screen and (min-width: 576px) {
+  .benefits #benefits-benefit {
+    padding-top: 4%;
+  }
+}
+
+@media only screen and (min-width: 840px) {
+  .benefits #benefits-benefit {
+    padding-top: 2%;
+  }
+}
+
 .benefits h1 {
   /*Little Savings Matter*/
   font-family: "brusherregular", cursive;
@@ -120,6 +204,18 @@ header .header-card button {
   padding: 15px;
   width: 100%;
   text-align: center;
+}
+
+@media only screen and (min-width: 576px) {
+  .benefits h1 {
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 840px) {
+  .benefits h1 {
+    font-size: 4em;
+  }
 }
 
 .benefits .benefit-box {
@@ -144,12 +240,23 @@ header .header-card button {
 .partners {
   background: #0c1829;
   background: linear-gradient(156deg, #0c1829 0%, #0d192a 9%, #3f6066 100%);
-  height: 45vh;
+}
+
+@media only screen and (min-width: 840px) {
+  .partners .partners-heading {
+    padding-bottom: 50px;
+  }
 }
 
 .partners .partners-heading h1 {
   color: floralwhite;
   font-family: "brusherregular", cursive;
+}
+
+@media only screen and (min-width: 840px) {
+  .partners .partners-heading h1 {
+    font-size: 3em;
+  }
 }
 
 .partners .partners-heading p {
@@ -161,8 +268,21 @@ header .header-card button {
   background-color: #3f6066;
 }
 
-#carouselPartners {
-  overflow-x: hidden;
+.partners #carouselPartners {
+  min-height: 300px;
+}
+
+@media only screen and (min-width: 840px) {
+  .partners #carouselPartners {
+    min-height: 450px;
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  .partners #carouselPartners .partner-logo {
+    width: 25%;
+    height: auto;
+  }
 }
 
 .subscribtion-row {
@@ -175,6 +295,12 @@ header .header-card button {
   font-size: 2em;
   width: 100%;
   text-align: center;
+}
+
+@media only screen and (min-width: 840px) {
+  .subscribtion-row #subscribtion-heading {
+    font-size: 3em;
+  }
 }
 
 .subscribtion-row .sub-form-div #sub-form-heading {
@@ -205,6 +331,13 @@ header .header-card button {
 footer {
   background: #a55a5a;
   background: linear-gradient(156deg, #a55a5a 0%, #281616 100%);
+  font-size: .7em;
+}
+
+@media only screen and (min-width: 840px) {
+  footer {
+    padding: 0px 100px;
+  }
 }
 
 footer .row-content {
@@ -235,12 +368,47 @@ footer li a:hover {
 footer #copyright {
   font-family: "Open Sans", sans-serif;
   font-size: .2em;
+  text-align: center;
+  color: #a1a1a1;
+  font-weight: lighter;
 }
 
-footer a {
+@media only screen and (min-width: 576px) {
+  footer #copyright {
+    font-size: .6em;
+  }
+}
+
+@media only screen and (min-width: 840px) {
+  footer #copyright {
+    font-size: 1em;
+    margin-top: auto;
+  }
+}
+
+footer .btn-social-icon {
+  background-color: floralwhite;
+  border-radius: 50%;
+  color: #636162;
+}
+
+footer .fa-facebook, footer .fa-twitter, footer .fa-instagram {
+  font-size: 2em;
+  border-radius: 50%;
+}
+
+footer .fa-instagram {
+  background: transparent;
   color: floralwhite;
-  text-decoration: none;
-  font-weight: lighter;
+}
+
+footer .fa-twitter {
+  color: floralwhite;
+}
+
+footer #hashTag {
+  color: floralwhite;
+  font-family: "Muli", sans-serif;
 }
 
 foot-list-support {
@@ -250,23 +418,5 @@ foot-list-support {
 foot-list-support li {
   display: inline;
   color: red;
-}
-
-.btn-social-icon {
-  background-color: floralwhite;
-  border-radius: 50%;
-  color: #636162;
-}
-
-#insta-btn {
-  background: transparent;
-  color: floralwhite;
-  font-size: 20px;
-}
-
-#copyright {
-  text-align: center;
-  color: #a1a1a1;
-  font-weight: lighter;
 }
 /*# sourceMappingURL=style.css.map */
