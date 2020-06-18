@@ -30,6 +30,11 @@ $iphone-5: 320px;
 		@content;
 	}
 }
+@mixin iphone-5 {
+	@media only screen and(max-width:#{$iphone-5}){
+		@content;
+	}
+}
 
 
 
@@ -71,6 +76,10 @@ header{
 
 		small{
 			font-family: $font-Bellaza;
+			font-size: 1.2em;
+			@include tablet(){
+				font-size: 1.2em;
+			}
 			@include desktop(){
 				font-size: 1.5em;
 			}
@@ -78,6 +87,9 @@ header{
 
 		button{
 			font-size: 1em !important;
+			@include iphone-5(){
+				font-size: .8em !important;
+			}
 		}
 	}
 }
@@ -166,6 +178,9 @@ header{
 			text-align: center;
 			font-family: $font-Muli;
 			font-weight: lighter;
+			@include desktop(){
+				margin-bottom: 70px;
+			}
 		}
 
 		span{
@@ -246,6 +261,9 @@ header{
 		h1{
 			color: floralwhite;
 			font-family: $font-Brusher;
+			@include iphone-5(){
+				font-size: 2em;
+			}
 			@include desktop(){
 				font-size: 3em;
 			}
@@ -253,6 +271,9 @@ header{
 		p{
 			color: #928F90;
 			font-family: $font-Cooper;
+			@include iphone-5(){
+				font-size: .8em;
+			}
 		}
 	}
 	.img-thumbnail{

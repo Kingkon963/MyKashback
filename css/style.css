@@ -35,6 +35,13 @@ header .header-card h3 {
 
 header .header-card small {
   font-family: "Belleza", sans-serif;
+  font-size: 1.2em;
+}
+
+@media only screen and (min-width: 576px) {
+  header .header-card small {
+    font-size: 1.2em;
+  }
 }
 
 @media only screen and (min-width: 840px) {
@@ -45,6 +52,12 @@ header .header-card small {
 
 header .header-card button {
   font-size: 1em !important;
+}
+
+@media only screen and (max-width: 320px) {
+  header .header-card button {
+    font-size: .8em !important;
+  }
 }
 
 .row-content {
@@ -150,6 +163,12 @@ header .header-card button {
   font-weight: lighter;
 }
 
+@media only screen and (min-width: 840px) {
+  .guide .step-div p {
+    margin-bottom: 70px;
+  }
+}
+
 .guide .step-div span {
   width: 30%;
   height: 15px;
@@ -253,6 +272,12 @@ header .header-card button {
   font-family: "brusherregular", cursive;
 }
 
+@media only screen and (max-width: 320px) {
+  .partners .partners-heading h1 {
+    font-size: 2em;
+  }
+}
+
 @media only screen and (min-width: 840px) {
   .partners .partners-heading h1 {
     font-size: 3em;
@@ -262,6 +287,12 @@ header .header-card button {
 .partners .partners-heading p {
   color: #928F90;
   font-family: "cooper_hewittbook", cursive;
+}
+
+@media only screen and (max-width: 320px) {
+  .partners .partners-heading p {
+    font-size: .8em;
+  }
 }
 
 .partners .img-thumbnail {
