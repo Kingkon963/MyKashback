@@ -19,6 +19,7 @@ $font-Cooper: "cooper_hewittbook", cursive;
 $desktop: 840px;
 $sm: 576px;
 $iphone-5: 320px;
+$ipad-pro: 1024px;
 
 @mixin desktop {
 	@media only screen and(min-width:#{$desktop}){
@@ -32,6 +33,11 @@ $iphone-5: 320px;
 }
 @mixin iphone-5 {
 	@media only screen and(max-width:#{$iphone-5}){
+		@content;
+	}
+}
+@mixin ipad-pro {
+	@media only screen and(width:#{$ipad-pro}){
 		@content;
 	}
 }
@@ -64,6 +70,9 @@ header{
 	background-size: cover;
 	background-position: center;
 	color: floralwhite;
+	@include ipad-pro(){
+		height: 96vh;
+	}
 
 	.header-card{
 		h3{
@@ -89,6 +98,9 @@ header{
 			font-size: 1em !important;
 			@include iphone-5(){
 				font-size: .8em !important;
+			}
+			@include ipad-pro(){
+				font-size: 1.5em !important;
 			}
 		}
 	}
@@ -141,6 +153,9 @@ header{
 		@include tablet(){
 			min-height: 400px;
 		}
+		@include ipad-pro(){
+
+		}
 
 		.step-heading{
 		border: 2px solid floralwhite;
@@ -155,23 +170,8 @@ header{
 		@include tablet(){
 			padding-left: 20px;
 			padding-right: 20px;
+			font-size: 1.2em;
 		}
-		}
-
-		img{
-			width: 60%;
-			height: auto;
-		}
-
-		@include desktop(){
-			#step-2-img{
-				width: 59%; 
-				height: auto;
-			}
-			#step-3-img{
-				width: 58%; 
-				height: auto;
-			}
 		}
 
 		p{
@@ -180,6 +180,9 @@ header{
 			font-weight: lighter;
 			@include desktop(){
 				margin-bottom: 70px;
+			}
+			@include tablet(){
+				min-height: 100px;
 			}
 		}
 

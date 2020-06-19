@@ -22,6 +22,12 @@ header {
   color: floralwhite;
 }
 
+@media only screen and (width: 1024px) {
+  header {
+    height: 96vh;
+  }
+}
+
 header .header-card h3 {
   font-family: "Muli", sans-serif;
   font-weight: bold;
@@ -57,6 +63,12 @@ header .header-card button {
 @media only screen and (max-width: 320px) {
   header .header-card button {
     font-size: .8em !important;
+  }
+}
+
+@media only screen and (width: 1024px) {
+  header .header-card button {
+    font-size: 1.5em !important;
   }
 }
 
@@ -138,22 +150,7 @@ header .header-card button {
   .guide .step-div .step-heading {
     padding-left: 20px;
     padding-right: 20px;
-  }
-}
-
-.guide .step-div img {
-  width: 60%;
-  height: auto;
-}
-
-@media only screen and (min-width: 840px) {
-  .guide .step-div #step-2-img {
-    width: 59%;
-    height: auto;
-  }
-  .guide .step-div #step-3-img {
-    width: 58%;
-    height: auto;
+    font-size: 1.2em;
   }
 }
 
@@ -166,6 +163,12 @@ header .header-card button {
 @media only screen and (min-width: 840px) {
   .guide .step-div p {
     margin-bottom: 70px;
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  .guide .step-div p {
+    min-height: 100px;
   }
 }
 
