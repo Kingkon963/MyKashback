@@ -112,6 +112,11 @@ header{
 				font-size: 1.5em !important;
 			}
 		}
+		#appSorry{
+			border-radius: 20px 20px;
+			background-color: color(primary);
+			font-family: $font-Muli;
+		}
 	}
 }
 
