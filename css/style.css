@@ -28,6 +28,12 @@ header {
   }
 }
 
+@media only screen and (min-width: 1440px) {
+  header {
+    height: 94vh;
+  }
+}
+
 header .header-card h3 {
   font-family: "Muli", sans-serif;
   font-weight: bold;

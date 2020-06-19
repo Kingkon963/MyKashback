@@ -79,6 +79,9 @@ header{
 	@include ipad-pro(){
 		height: 96vh;
 	}
+	@include laptop-hd(){
+		height: 94vh;
+	}
 
 	.header-card{
 		h3{
