@@ -287,6 +287,18 @@ header .header-card button {
   }
 }
 
+@media only screen and (min-width: 1440px) {
+  .partners .partners-heading h1 {
+    font-size: 4.5em;
+  }
+}
+
+@media only screen and (width: 1024px) {
+  .partners .partners-heading h1 {
+    font-size: 4em;
+  }
+}
+
 .partners .partners-heading p {
   color: #928F90;
   font-family: "cooper_hewittbook", cursive;
@@ -295,6 +307,18 @@ header .header-card button {
 @media only screen and (max-width: 320px) {
   .partners .partners-heading p {
     font-size: .8em;
+  }
+}
+
+@media only screen and (width: 1024px) {
+  .partners .partners-heading p {
+    font-size: 1.4em;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .partners .partners-heading p {
+    font-size: 1.4em;
   }
 }
 
@@ -312,9 +336,28 @@ header .header-card button {
   }
 }
 
+@media only screen and (min-width: 1440px) {
+  .partners #carouselPartners {
+    min-height: 380px;
+  }
+}
+
+@media only screen and (width: 1024px) {
+  .partners #carouselPartners {
+    min-height: 100px;
+  }
+}
+
 @media only screen and (min-width: 576px) {
   .partners #carouselPartners .partner-logo {
     width: 25%;
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .partners #carouselPartners .partner-logo {
+    width: 20%;
     height: auto;
   }
 }
@@ -376,6 +419,12 @@ footer {
 
 footer .row-content {
   min-height: 30vh;
+}
+
+@media only screen and (width: 1024px) {
+  footer .row-content {
+    min-height: 20vh;
+  }
 }
 
 footer h5 {

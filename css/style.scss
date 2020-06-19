@@ -17,12 +17,18 @@ $font-Cooper: "cooper_hewittbook", cursive;
 
 
 $desktop: 840px;
+$laptop-hd: 1440px;
 $sm: 576px;
 $iphone-5: 320px;
 $ipad-pro: 1024px;
 
 @mixin desktop {
 	@media only screen and(min-width:#{$desktop}){
+		@content;
+	}
+}
+@mixin laptop-hd {
+	@media only screen and(min-width:#{$laptop-hd}){
 		@content;
 	}
 }
@@ -270,12 +276,24 @@ header{
 			@include desktop(){
 				font-size: 3em;
 			}
+			@include laptop-hd(){
+				font-size: 4.5em;
+			}
+			@include ipad-pro(){
+				font-size: 4em;
+			}
 		}
 		p{
 			color: #928F90;
 			font-family: $font-Cooper;
 			@include iphone-5(){
 				font-size: .8em;
+			}
+			@include ipad-pro(){
+				font-size: 1.4em;
+			}
+			@include laptop-hd(){
+				font-size: 1.4em;
 			}
 		}
 	}
@@ -287,9 +305,19 @@ header{
 		@include desktop(){
 			min-height: 450px;
 		}
+		@include laptop-hd(){
+			min-height: 380px;
+		}
+		@include ipad-pro(){
+			min-height: 100px;
+		}
 		.partner-logo{
 			@include tablet(){
 				width: 25%;
+				height: auto;
+			}
+			@include laptop-hd(){
+				width: 20%;
 				height: auto;
 			}
 		}
@@ -355,6 +383,9 @@ footer{
 	}
 	.row-content{
 		min-height: 30vh;
+		@include ipad-pro(){
+			min-height: 20vh;
+		}
 	}
 
 	h5{
