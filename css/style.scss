@@ -71,7 +71,7 @@ $ipad-pro: 1024px;
 }
 header{
 	height: 93vh;
-	background-image: url('Pic_Collate.png');
+	background-image: url('../img/Pic_Collate.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -192,8 +192,10 @@ header{
 			text-align: center;
 			font-family: $font-Muli;
 			font-weight: lighter;
+			padding-top: 5%;
 			@include desktop(){
 				margin-bottom: 70px;
+				padding-top: 10%;
 			}
 			@include tablet(){
 				min-height: 100px;
@@ -220,10 +222,18 @@ header{
 	}
 }
 .benefits{
-	background-image: url("./3rd_portion.jpg");
+	background-image: url("../img/3rd_portion.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: -150px;
+	@include laptop-hd(){
+		background-position: 0px 0px;
+	}
+	#benefits-benefit{
+		@include laptop-hd(){
+			padding-left: 200px;
+		}
+	}
 	
 	.col-12{
 		background-color: rgba(13,25,42,.5);
@@ -254,9 +264,14 @@ header{
 		border: 3px solid floralwhite;
 		padding: 0px 20px 0px 20px;
 		min-width: 100%;
-		margin-bottom: 30px;
+		margin-bottom: 10px;
 		text-align: center;
 		color: floralwhite;
+		transform: scale(.8);
+		@include tablet(){
+			margin-bottom: 30px;
+			transform: scale(1);
+		}
 
 		h3{
 			font-family: $font-Muli;
@@ -363,6 +378,7 @@ header{
 			text-align: center;
 			border: 2px solid #636162;
 			font-family: $font-Galcial;
+			box-shadow: 5px 5px #4A6F73;
 		}
 
 		small{
@@ -376,6 +392,19 @@ header{
 			font-family: $font-Cooper;
 			padding: 5px 40px 5px 40px;
 			border: none;
+		}
+		.sub-btn:hover{
+			background-color: #814747;
+		}
+		.spinner-border{
+			width: 1.5rem;
+			height: 1.5rem;
+		}
+		#sub-log{
+			border-radius: 20px 20px;
+		}
+		.faulty-field{
+			border-color: darken($color: red, $amount: 14);
 		}
 	}
 
@@ -395,10 +424,13 @@ footer{
 			min-height: 20vh;
 		}
 	}
-
 	h5{
 		color: floralwhite;
 		font-family: $font-Muli;
+		font-size: 1.3em;
+		@include laptop-hd(){
+			font-size: 1.5em;
+		}
 	}
 	
 	li{
@@ -418,22 +450,22 @@ footer{
 
 	#copyright{
 		font-family: $font-OpenSans;
-		font-size: .2em;
+		font-size: .75em;
 		text-align: center;
 		color: #a1a1a1;
 		font-weight: lighter;
 		@include tablet(){
-			font-size: .6em;
+			font-size: .8em;
 		}
 		@include desktop(){
 			font-size: 1em;
 			margin-top: auto;
 		}
 	}
-	.btn-social-icon{
-		background-color: floralwhite;
-		border-radius: 50%;
-		color: #636162;
+	.social-btns-div{
+		.btn:focus{
+			box-shadow: none;
+		}
 	}
 	.fa-facebook , .fa-twitter, .fa-instagram{
 		font-size: 2em;
@@ -445,6 +477,7 @@ footer{
 	}
 	.fa-twitter{
 		color: floralwhite;
+		border: none;
 	}		
 
 	#hashTag{

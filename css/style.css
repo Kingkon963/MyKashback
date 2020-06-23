@@ -15,7 +15,7 @@
 
 header {
   height: 93vh;
-  background-image: url("Pic_Collate.png");
+  background-image: url("../img/Pic_Collate.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -170,11 +170,13 @@ header .header-card #appSorry {
   text-align: center;
   font-family: "Muli", sans-serif;
   font-weight: lighter;
+  padding-top: 5%;
 }
 
 @media only screen and (min-width: 840px) {
   .guide .step-div p {
     margin-bottom: 70px;
+    padding-top: 10%;
   }
 }
 
@@ -209,10 +211,22 @@ header .header-card #appSorry {
 }
 
 .benefits {
-  background-image: url("./3rd_portion.jpg");
+  background-image: url("../img/3rd_portion.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: -150px;
+}
+
+@media only screen and (min-width: 1440px) {
+  .benefits {
+    background-position: 0px 0px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .benefits #benefits-benefit {
+    padding-left: 200px;
+  }
 }
 
 .benefits .col-12 {
@@ -256,9 +270,19 @@ header .header-card #appSorry {
   border: 3px solid floralwhite;
   padding: 0px 20px 0px 20px;
   min-width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   text-align: center;
   color: floralwhite;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+@media only screen and (min-width: 576px) {
+  .benefits .benefit-box {
+    margin-bottom: 30px;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }
 
 .benefits .benefit-box h3 {
@@ -403,6 +427,8 @@ header .header-card #appSorry {
   text-align: center;
   border: 2px solid #636162;
   font-family: "glacial_indifferenceregular", serif;
+  -webkit-box-shadow: 5px 5px #4A6F73;
+          box-shadow: 5px 5px #4A6F73;
 }
 
 .subscribtion-row .sub-form-div small {
@@ -415,6 +441,23 @@ header .header-card #appSorry {
   font-family: "cooper_hewittbook", cursive;
   padding: 5px 40px 5px 40px;
   border: none;
+}
+
+.subscribtion-row .sub-form-div .sub-btn:hover {
+  background-color: #814747;
+}
+
+.subscribtion-row .sub-form-div .spinner-border {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.subscribtion-row .sub-form-div #sub-log {
+  border-radius: 20px 20px;
+}
+
+.subscribtion-row .sub-form-div .faulty-field {
+  border-color: #b80000;
 }
 
 footer {
@@ -442,6 +485,13 @@ footer .row-content {
 footer h5 {
   color: floralwhite;
   font-family: "Muli", sans-serif;
+  font-size: 1.3em;
+}
+
+@media only screen and (min-width: 1440px) {
+  footer h5 {
+    font-size: 1.5em;
+  }
 }
 
 footer li {
@@ -462,7 +512,7 @@ footer li a:hover {
 
 footer #copyright {
   font-family: "Open Sans", sans-serif;
-  font-size: .2em;
+  font-size: .75em;
   text-align: center;
   color: #a1a1a1;
   font-weight: lighter;
@@ -470,7 +520,7 @@ footer #copyright {
 
 @media only screen and (min-width: 576px) {
   footer #copyright {
-    font-size: .6em;
+    font-size: .8em;
   }
 }
 
@@ -481,10 +531,9 @@ footer #copyright {
   }
 }
 
-footer .btn-social-icon {
-  background-color: floralwhite;
-  border-radius: 50%;
-  color: #636162;
+footer .social-btns-div .btn:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 footer .fa-facebook, footer .fa-twitter, footer .fa-instagram {
@@ -499,6 +548,7 @@ footer .fa-instagram {
 
 footer .fa-twitter {
   color: floralwhite;
+  border: none;
 }
 
 footer #hashTag {

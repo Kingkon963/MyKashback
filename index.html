@@ -1,52 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>myKashBack</title>
+	<link rel='icon' href='favicon.ico' type='image/x-icon'>
+	<title>MyKashback</title>
 
 	<!-- Required meta tags always come first -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="theme-color" content="#a65b5b" />
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-	<!-- Social Media Icons -->
-    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
 
 	<!-- Custom Style -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 	<!-- Add icon library -->
-	<link rel="stylesheet" href="fonts/fontawesome-free-5.13.0-web/css/all.css">
+	<link rel="stylesheet" href="fonts/fontawesome-free-5.13.0-web/fontawesome-free-5.13.0-web/css/all-brand.css">
 
 	<!-- Custom Fonts -->
 	<link href="https://fonts.googleapis.com/css2?family=Andada&family=Belleza&family=Corben&family=Lalezar&family=Muli:wght@200;300;400;500;600;700&family=Open+Sans&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="./fonts/Brusher/stylesheet.css">
-	<link rel="stylesheet" href="./fonts/Cooper/stylesheet.css">
-	<link rel="stylesheet" href="./fonts/Gagalin/stylesheet.css">
-	<link rel="stylesheet" href="./fonts/Glacial/stylesheet.css">
+	<link rel="stylesheet" href="./fonts/font-stylesheet.css">
 
 </head>
 <body>
 	<nav class="navbar navbar-dark navbar-expand-lg ">
 		<div class="container-fluid">
-			<a class="navbar-brand bg-primary mx-auto mx-md-0" href="#"><img class="img-fluid img-responsive" src="./img/K_Logo_Mykashback.png" alt=""></a>
-			<!--<button class="navbar-toggler" data-toggle='collapse' data-target='#navbar'>
-				<i class="navbar-toggler-icon"></i>
-			</button>
-			<div class="collapse d-none" id="navbar">
-				<ul class="navbar-nav">
-					<li class="nav-item">
-						<a class="nav-link active" href="">Home</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="">Downloads</a>
-					</li>
-				</ul>
-			</div> -->
+			<a class="navbar-brand mx-auto mx-md-0" href="#"><img class="img-fluid img-responsive" src="./img/K_Logo_Mykashback.jpg" alt=""></a>
+
 		</div>
 	</nav>
-	<!--Modal for Stores-->
 
 	<header class="">
 		<div class="container-fluid h-100">
@@ -61,7 +45,7 @@
 							<button class="btn btn-outline-light" data-toggle="collapse" data-target="#appSorry-div"><span class="fab fa-google-play fa-lg"></span> Google Play</button>
 						</div>
 						<div class="collapse" id="appSorry-div">
-							<p class="text-center mx-5 p-1" id="appSorry">Oh Sorry! Our app is due to be uploaded soon.</p>
+							<p class="text-center mx-5 p-1 text-capitalize" id="appSorry">Oh Sorry! Our app is due to be Launched soon.</p>
 						</div>
 					</div>
 				</div>
@@ -73,7 +57,7 @@
 		<div class="row row-content guide">
 			<div class="col-12 h-25 mt-5 mt-md-4">
 				<div class="d-flex justify-content-center">
-					<h1>How myKashBack Works</h1>
+					<h1>How MyKashback Works</h1>
 				</div>
 				<p class="text-center mt-1" id="guide-heading-sub">It's much easier than you think</p>
 			</div>
@@ -89,7 +73,7 @@
 				<div class="d-flex flex-column step-div pb-5">
 					<h2 class="step-heading">Scan</h2>
 					<img class="img-fluid mx-auto" src="img/White-mobile-circle-numeric-2.png">
-					<p class="">Once you have spent there, ask the merchant to provide the QR code and scan it.</p>
+					<p class="">Once you have spent there, ask the business to provide the QR code and scan it.</p>
 					<span class="align-self-center"></span>
 				</div>
 			</div>
@@ -97,7 +81,7 @@
 				<div class="d-flex flex-column step-div pb-5">
 					<h2 class="step-heading">Earn Cashback</h2>
 					<img class="img-fluid mx-auto" src="img/White-mobile-circle-numeric-3.png">
-					<p class="">Get your KashBack account credited with the kashback amount immediately.</p>
+					<p class="">Get your KashBack account credited with the cashback amount immediately.</p>
 					<span class="align-self-center"></span>
 				</div>
 			</div>
@@ -121,7 +105,7 @@
 					</div>
 					<div class="benefit-box">
 						<h3>Wider Range of Service</h3>
-						<p>From restaurant to Beauty shop, you<br>have lot of places to get cash back from</p>
+						<p>From restaurant to beauty shop, you<br>have lot of places to get cash back from</p>
 					</div>
 				</div>
 			</div>
@@ -174,25 +158,33 @@
 				</div>
 			</div>
 			<div class="col-10 offset-1 col-md-4 offset-md-4 sub-form-div mb-5 ">
-				<form class="">
+				<form class="" id="subscribeForm">
 					<div class="d-flex flex-column">
 						<h3 id="sub-form-heading" class="mx-auto">Subscribe for updates</h3>
 						<div>
 							<div class="form-group">
-								<input type="text" class="form-control sub-form-input" placeholder="Name" name="">
+								<input type="text" class="form-control sub-form-input" placeholder="Name" name="name">
 							</div>
 							<div class="form-group">
-								<input type="email" class="form-control sub-form-input" placeholder="Email Address" name="">
+								<input type="email" class="form-control sub-form-input" placeholder="Email Address" name="email">
 							</div>
 							<div class="form-group">
-								<input type="text" class="form-control sub-form-input" placeholder="Location" name="">
+								<input type="text" class="form-control sub-form-input" placeholder="Location" name="location">
 							</div>
 							<div class="form-group">
-								<small class="form-text text-muted">By clicking on Subscrib, you agree to receive MyKashBack offers and marketing emails. see T&Cs</small>
+								<small class="form-text text-muted text-center">By clicking on Subscribe, you agree to receive MyKashBack offers and marketing emails. see T&Cs</small>
 							</div>
 						</div>
 						
-						<button type="submit" class="btn btn-lg sub-btn mx-auto">Subscribe</button>
+						<button class="btn btn-lg sub-btn mx-auto">Subscribe <span class="spinner-border collapse"></span></button>
+							
+
+						
+						
+						<div class="collapse" id="sub-log-div">
+							<p class="bg-white p-1 mt-3 text-center " id="sub-log"></p>
+						</div>
+						
 					</div>
 						
 				</form>
@@ -203,43 +195,40 @@
 	<footer class="pt-5">
 		<div class="container-fluid">
 			<div class="row row-content">
-				<div class="col-12 col-md-10">
-					<div class="d-flex justify-content-between">
-						<div>
-							<ul class="list-group">
-								<h5>Support</h5>
-								<li><a href="">Contact</a></li>
-								<li><a href="">MyKashback Team</a></li>
-								<li><a href="">FAQs</a></li>
-							</ul>
-						</div>
-						<div>
-							<ul class="list-group">
-								<h5>MyKashback</h5>
-								<li><a href="">About us</a></li>
-								<li><a href="">Careers</a></li>
-								<li><a href="">Charity</a></li>
-							</ul>
-						</div>
-						<div>
-							<ul class="list-group">
-								<h5>Legal</h5>
-								<li><a href="">Privacy Policy</a></li>
-								<li><a href="">Careers</a></li>
-								<li><a href="">Charity</a></li>
-							</ul>
-						</div>
-					</div>
+				<div class="col-4 offset-md-0 col-md-3">
+					<ul class="list-group">
+						<h5>Support</h5>
+						<li><a href="">Contact</a></li>
+						<li><a href="">MyKashback Team</a></li>
+						<li><a href="">FAQs</a></li>
+					</ul>
+				</div>
+				<div class="col-4 col-md-3">
+					<ul class="list-group">
+						<h5>MyKashback</h5>
+						<li><a href="">About us</a></li>
+						<li><a href="">Careers</a></li>
+						<li><a href="">Charity</a></li>
+					</ul>
+				</div>
+				<div class="col-4 col-md-3 pl-4">
+					<ul class="list-group">
+						<h5>Legal</h5>
+						<li><a href="">Privacy policy</a></li>
+						<li class="d-sm-none"><a href="">T&Cs</a></li>
+						<li class="d-none d-sm-block"><a href="">Terms & Conditions</a></li>
+						<li><a href="">Cookies policy</a></li>
+					</ul>
 				</div>
 				
-				<div class="col-12 col-md-2">
+				<div class="col-12 col-md-3">
 					<div class="d-flex flex-column justify-content-center">
-						<div class="d-flex justify-content-center align-items-center">
-							<a class="btn  "><i class="fab fa-facebook fa-lg bg-dark text-white"></i></a>
-							<a class="btn  "><i class="fab fa-instagram fa-lg"></i></a>
+						<div class="d-flex justify-content-center align-items-center social-btns-div">
+							<a class="btn " href="https://www.facebook.com/mykashback" target="_blank"><i class="fab fa-facebook fa-lg bg-dark text-white"></i></a>
+							<a class="btn  " href="https://www.instagram.com/mykashback/?hl=en" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
 							<a class="btn  "><i class="fab fa-twitter fa-lg"></i></a>	
 						</div>
-						<h4 class="text-center" id="hashTag">#mykashback</h4>
+						<h4 class="text-center font-weight-bold" id="hashTag">#mykashback</h4>
 					</div>
 				</div>
 
@@ -256,6 +245,7 @@
 	<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
 	<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 	<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
 
 </body>
 </html>
