@@ -11,7 +11,6 @@ function init(){
     form['email'].classList.remove('faulty-field');
     form['location'].classList.remove('faulty-field');
     document.querySelector('#sub-log-div').classList.add('collapse');
-    document.querySelector('#sub-log').classList.remove('text-success');
     document.querySelector('#sub-log').classList.remove('text-danger');
     document.querySelector('.spinner-border').classList.add('collapse');
     subBtn.classList.remove('bg-success');
@@ -88,9 +87,8 @@ function formIsValid(){
 function success(){
     document.querySelector('.spinner-border').classList.add('collapse');
     document.querySelector('#sub-log').textContent = "Subscribtion Successful!";
-    document.querySelector('#sub-log').classList.add('text-success');
     document.querySelector('#sub-log-div').classList.remove('collapse');
-    subBtn.classList.add('bg-success');
+    subBtn.style.backgroundColor = "#4A6F73";
 }
 function failed(err=null){
     document.querySelector('.spinner-border').classList.add('collapse');
@@ -100,7 +98,7 @@ function failed(err=null){
         empty_field_email: "Please Enter Your Email",
         empty_field_location: "PLease Enter your Location",
         email_invalid: "Your Email is Invalid",
-        unknown: (err == "TypeError: Failed to fetch") ? "Unable to Connect" : "Subscription Unsuccessful :-( "+"Error: "+err
+        unknown: (err == "TypeError: Failed to fetch") ? "Opps! Please Check Your Connection" : "Subscription Unsuccessful :-( "+"Error: "+err
     }
     
     if(document.querySelector('#sub-log-div').classList.contains('collapse')){

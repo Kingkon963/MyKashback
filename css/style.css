@@ -454,10 +454,13 @@ header .header-card #appSorry {
 
 .subscribtion-row .sub-form-div #sub-log {
   border-radius: 20px 20px;
+  color: #4A6F73;
 }
 
 .subscribtion-row .sub-form-div .faulty-field {
-  border-color: #b80000;
+  border-color: red;
+  -webkit-box-shadow: 0px 0px 20px #bd0000;
+          box-shadow: 0px 0px 20px #bd0000;
 }
 
 footer {
